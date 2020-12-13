@@ -1,0 +1,35 @@
+<!--输入数据实现-->
+<view class="ke">今日的课时数：</view>
+<input type="number"  bindinput="input1" placeholder="请输入今日课时数" placeholder-class="placeholder" >{{class}}</input>
+<view>今日背诵单词数：</view>
+<input  type="number"  bindinput="input2" placeholder="请输入你的今日背诵量" placeholder-class="placeholder">{{words}}</input>
+<view>今日运动时长：</view>
+<input type="number"   bindinput="input3" placeholder="请输入你的运动时长(min)" placeholder-class="placeholder">{{sports}}</input>
+<view>对今日学习打分：</view>
+<input  type="number"  bindinput="input4" placeholder="给自己一个分数哦(100分制)" placeholder-class="placeholder" >{{study}}</input>
+<!-- 实现上传图片和调用百度颜值评判api部分 -->
+<view style="margin:20px">
+  <block wx:if="{{showbutton}}">
+    <button type="primary" bindtap="chooseImg">打开照片</button>
+    </block>
+    <block wx:else>
+    <button  bindtap="beautyTap" class="jiafen">点击一下--颜值加分</button>
+    </block>
+</view>
+<view style="beauty" >{{beauty}}</view>
+<view class="show">
+  <image src="{{img}}" mode="aspectFit" style="margin-top:10px;width:300px;height:300px;background-color:#eeeeee;margin-left:12px"
+class="image"/>
+</view>
+
+<view>
+  <view class="result" hidden="{{flag}}">{{struggle}}</view>
+  <block wx:if="{{showbutton2}}">
+    <button  bindtap="test"  calss="tijiao" type="primary">计算最终奋斗值</button>
+    </block>
+    <block wx:else>
+    <button  bindtap="yitijiao" class="tijiao">今日已录入奋斗值</button>
+    </block>
+  <button bindtap="history" type="primary" class="history" >查看历史记录</button>
+</view>
+

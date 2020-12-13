@@ -1,0 +1,12 @@
+
+<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2462441162,1214408970&fm=26&gp=0.jpg" class="img" style="opacity:{{0.8}}"></image>
+<button bindtap="request"  class="music">获取今日份随机音乐鼓励</button>
+<view hidden="{{flag}}">歌手：{{artistname}}</view>
+<view hidden="{{flag}}">歌名：{{name}}</view>
+<image src="{{picture}}" hidden="{{flag}}"></image>
+<audio src="{{src}}" poster="{{picture}}" name="{{name}}" author="{{artistname}}" id="myAudio" controls loop hidden="{{flag}}"></audio>
+<view hidden="{{flag}}">
+  <button  bindtap="audioPlay" class="test">播放</button>
+<button bindtap="audioPause" class="test">暂停</button>
+<button  bindtap="audioStart" class="test" >重新开始</button>
+</view>

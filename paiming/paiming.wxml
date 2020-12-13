@@ -1,0 +1,25 @@
+<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=226387575,1158515207&fm=26&gp=0.jpg" class="img" style="opacity:{{0.8}}"></image>
+<view class="pre">
+   <view class="tianqi">提醒小主今日天气</view>
+  <view class="zi">地点：{{place}}</view>
+  <view class="zi">今日天气：{{weather}}</view>
+  <view  class="zi">风向：{{wind}}</view>
+  <view class="zi">紫外线强度：{{ziwaixian}}</view>
+</view>
+<view>
+  <text class="paihang">小主最近十天的奋斗值排行</text>
+</view>
+<view class="list">
+  <view  class="history">
+    <view class="score">{{scores1}}</view>
+    <view class="score">{{scores2}}</view>
+    <view class="score">{{scores3}}</view>
+    <view class="score">{{scores4}}</view>
+    <view class="score">{{scores5}}</view>
+    <view class="score">{{scores6}}</view>
+    <view class="score">{{scores7}}</view>
+    <view class="score">{{scores8}}</view>
+    <view class="score">{{scores9}}</view>
+    <view class="score">{{scores10}}</view>
+  </view>
+</view>

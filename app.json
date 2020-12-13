@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/paiming/paiming",
+    "pages/onload/onload",
+    "pages/index/index"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "每日一言",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#FFFAFA"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#99FF00",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "iconPath": "images/room.png",
+        "selectedIconPath": "images/room1.png",
+        "pagePath": "pages/test/test",
+        "text": "我的奋斗小屋"
+      },
+      {
+        "iconPath": "images/paiming.png",
+        "selectedIconPath": "images/paiming1.png",
+        "pagePath": "pages/logs/logs",
+        "text": "主页"
+      },
+      {
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me1.png",
+        "pagePath": "pages/onload/onload",
+        "text": "娱乐区"
+      }
+    ],
+    "position": "bottom"
+  }
+}

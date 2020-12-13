@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#CCFF99",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText":"我的奋斗小屋",
+  "enablePullDownRefresh":true
+}

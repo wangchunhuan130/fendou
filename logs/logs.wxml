@@ -1,0 +1,21 @@
+<!--pages/home/home.wxml-->
+<image src='/images/n.jpg' class="k" ></image>
+<view class="date">{{time1}}</view>
+<view class="times">本月已累计签到{{times}}天</view>
+<view class="times">总共累计签到{{total}}天</view>
+<block wx:if="{{showbutton}}">
+    <button  bindtap="qiandao"  calss="btn1">签到</button>
+    </block>
+    <block wx:else>
+    <button  bindtap="test" class="btn1">每日一言</button>
+    </block>
+<form>
+
+  <view class="text1">
+    {{result.newslist[0].saying}}</view>
+
+  <view class="text2">
+    {{result.newslist[0].transl}}</view>
+</form>
+
+
